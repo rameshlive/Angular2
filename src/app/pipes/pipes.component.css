@@ -1,0 +1,19 @@
+.list-group{
+        background: #fff;
+    padding: 20px;
+}
+.list-group div {
+    font-size: 16px;
+    padding: 5px;
+
+}
+.list-group div span{
+    color: #fff;
+    font-weight: normal;
+    display: inline-block;
+    padding: 5px 10px;
+    min-width: 100px;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 13px;
+}

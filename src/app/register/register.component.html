@@ -1,0 +1,27 @@
+
+<div class="center-container">
+    <div class="profile--open">
+         <form #registerForm="ngForm" (ngSubmit) = "onSubmit(registerForm.value)">
+            <div class="profile__form">
+              <div class="profile__fields">
+                <div class="field">
+                  <input type="text"  class="input" #username="ngModel" [(ngModel)] ="userName" autocomplete="off"  id="username" name="username"/>
+                  <label for="username" class="label">Username</label>
+                </div>
+                <div class="field">
+                  <input type="password" class="input" #password="ngModel" [(ngModel)] ="pwd" autocomplete="off"  id="pwd" name="pwd"/>
+                  <label for="pwd" class="label">Password</label>
+                </div>
+                <div class="field">
+                  <input type="text" class="input" #email="ngModel" [(ngModel)] ="eMail" autocomplete="off"  id="email" name="email"/>
+                  <label for="email" class="label">Email</label>
+                </div>
+                <div class="profile__footer">
+                  <button class="btn" type="submit">Signup</button>
+                </div>
+                <span> {{ successMsg }}</span>
+              </div>
+          </div>
+        </form>
+       </div>
+</div>

@@ -1,0 +1,14 @@
+ul{list-style-type:none;}
+.box{
+    background: white;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-align: center;
+    width: 20px;
+    display: inline-block;
+    margin: 5px;
+}
+.list-group-addon{
+    margin:5px;
+    cursor:pointer;
+}

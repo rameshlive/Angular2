@@ -1,0 +1,18 @@
+<div class="row">
+      <div class="col-md-4">
+          <div class="form-group">
+            <label>Filter by Name:</label>
+            <input type="text" name="filtertext"  [(ngModel)]='filtertext' class="form-control"><span> {{ filtertext }} </span> 
+          </div>
+      </div>
+</div>
+
+<div class="row">
+      <div class="col-md-8">
+            <div class="list-group">
+                <div *ngFor="let movie of movies | filter :filtertext">
+                      <span [ngStyle]='{background: movie.color }'>{{ movie.color | uppercase }}</span>{{ movie.name | capitalize }}
+                </div>
+            </div>
+      </div>
+</div>

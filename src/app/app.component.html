@@ -1,0 +1,53 @@
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand"><img src="../assets/images/angular.png"/></a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" routerLink="/movies" routerLinkActive="active">Movies</a>
+            </li>
+            <li>
+              <a routerLink="/TDforms" routerLinkActive="active">TD Forms</a>
+            </li>
+            
+            <li class="dropdown">
+              <a routerLinkActive="active" routerLink="/example3" >Example3 </a>
+            </li>
+            <li class="dropdown">
+              <a  routerLinkActive="active" routerLink="/pipes" >Pipes </a>
+            </li>
+            <li class="dropdown">
+              <a routerLinkActive="active" routerLink="/sorting" >Sorting</a>
+            </li>
+            <li class="dropdown">
+              <a routerLinkActive="active" routerLink="/weather" >Weather</a>
+            </li>
+            <li class="dropdown">
+              <a routerLinkActive="active" routerLink="/employees">Employees</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+              <li><a routerLink='/login'>Login</a></li>
+              <li><a>Logout</a></li>
+          </ul>
+
+        </div>
+      </div>
+</div>
+       <div class="container">
+          <div class="page-header" id="banner">
+              <router-outlet></router-outlet>
+          </div>
+       </div>   
+
+      
+

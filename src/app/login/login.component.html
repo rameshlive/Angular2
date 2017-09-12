@@ -1,0 +1,23 @@
+
+<div class="center-container">
+    <div class="profile--open">
+      <form #userForm ='ngForm' (ngSubmit) = "onSubmit(userForm.value)" >
+            <img src="../assets/images/profile.JPG" alt="Avatar" class="profile__avatar"/>
+            <div class="profile__form">
+              <div class="profile__fields">
+                <div class="field">
+                  <input type="text" type="text" class="input" autocomplete="off" #username="ngModel" [(ngModel)] = "userName" id="username" name="username"/>
+                  <label for="username" class="label">Username</label>
+                </div>
+                <div class="field">
+                  <input type="password" class="input" autocomplete="off" #pwd="ngModel" [(ngModel)] = "Password" id="pwd" name="pwd"/>
+                  <label for="pwd" class="label">Password</label>
+                </div>
+                <div class="profile__footer">
+                  <button class="btn" type="submit">Login</button> New user ? <a routerLink="/signup"> Signup here </a>
+                </div>
+              </div>
+          </div>
+        </form>
+       </div>
+</div>
