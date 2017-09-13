@@ -76,7 +76,7 @@ export class EmployeeDetailComponent implements OnInit {
                   this.statusMsg ="Records Not Found";
                 }
             },
-            error => this.status = error
+            (error) => this.status = error
         );
      }
      goPrevious(){

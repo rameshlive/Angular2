@@ -50,7 +50,7 @@ import { SortingPipe } from '../sorting.pipe';
               </div> 
 
               <div class="row">
-              <div  *ngFor="let data of ( datas | sortBy : [ selectedItem ,  order , newArray ] ) let l = count let i = index" class="col-sm-3" [ngClass]="{'clearix': i % 4 == 0 }">
+              <div  *ngFor="let data of ( datas | sortBy : [ selectedItem ,  order , bedroomtype ] ) let l = count let i = index" class="col-sm-3" [ngClass]="{'clearix': i % 4 == 0 }">
               <div class="division">
                   <img src="assets/images/{{ data.image }}.jpg" style="max-width:100%"/>
                       <div class="detail left">
