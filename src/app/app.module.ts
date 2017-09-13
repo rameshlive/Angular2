@@ -23,6 +23,7 @@ import { ChildComponent } from './child/child.component';
 import { WeatherComponent } from './weather/weather.component';
 import { EmployeesListComponent } from './employees-list/employees-list.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { EventsComponent } from './events/events.component';
 
 
 
@@ -44,7 +45,8 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
     ChildComponent,
     WeatherComponent,
     EmployeesListComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
