@@ -10,7 +10,7 @@ export class SortingPipe implements PipeTransform {
 
         let sortField = args[0].toLowerCase();
         let order = args[1].toLowerCase();
-        let bedroomtype = 'all';
+        let bedroomtype = args[2].toLowerCase();
 
        // var result = args.slice(2);
 
@@ -18,9 +18,7 @@ export class SortingPipe implements PipeTransform {
             if( bedroomtype == 'all'){
                var filterValues = value;
             }else{
-              var filterValues=  value.filter( x => x.bedrooms == '1')
-
-               //var filteredArray = value.filter(element);
+              var filterValues=  value.filter( x => x.bedrooms == bedroomtype)
             }
         }
 

@@ -1,4 +1,4 @@
-import { EventsComponent } from './events/events.component';
+
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { EmployeesListComponent } from './employees-list/employees-list.component';
 import { WeatherComponent } from './weather/weather.component';
@@ -24,7 +24,6 @@ export const routes: Routes = [
     { path : 'weather' , component : WeatherComponent },
     { path : 'employees' , component : EmployeesListComponent },
     { path : 'employee/:id' , component : EmployeeDetailComponent },
-    { path : 'events' , component : EventsComponent },
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: '**', component: PagenotfoundComponent }
 ]
