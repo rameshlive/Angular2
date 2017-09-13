@@ -23,11 +23,8 @@ import { ChildComponent } from './child/child.component';
 import { WeatherComponent } from './weather/weather.component';
 import { EmployeesListComponent } from './employees-list/employees-list.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
-import { EventsComponent } from './events/events.component';
-<<<<<<< HEAD
+
 import { HighlightDirective } from './highlight.directive';
-=======
->>>>>>> 3c1f12843afa0c89d5d96b6bfaaa096cce9565f7
 
 
 
@@ -49,13 +46,7 @@ import { HighlightDirective } from './highlight.directive';
     ChildComponent,
     WeatherComponent,
     EmployeesListComponent,
-    EmployeeDetailComponent,
-<<<<<<< HEAD
-    EventsComponent,
-    HighlightDirective
-=======
-    EventsComponent
->>>>>>> 3c1f12843afa0c89d5d96b6bfaaa096cce9565f7
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,

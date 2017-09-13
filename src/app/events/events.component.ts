@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-import { HighlightDirective } from '../highlight.directive';
-=======
 
->>>>>>> 3c1f12843afa0c89d5d96b6bfaaa096cce9565f7
+import { HighlightDirective } from '../highlight.directive';
+
+
 @Component({
   selector: 'app-events',
   template:`
@@ -14,11 +13,8 @@ import { HighlightDirective } from '../highlight.directive';
       <button type="button" (click)="addHero(newhero.value)">Add</button>
 
       <ul>
-<<<<<<< HEAD
           <li *ngFor="let hero of heroes" appHighlight>{{ hero }}</li>
-=======
-          <li *ngFor="let hero of heroes">{{ hero }}</li>
->>>>>>> 3c1f12843afa0c89d5d96b6bfaaa096cce9565f7
+
       </ul>
 
   `,
