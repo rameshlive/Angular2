@@ -25,8 +25,9 @@ import { EmployeesListComponent } from './employees-list/employees-list.componen
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 
 import { HighlightDirective } from './highlight.directive';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-
+import {MdCheckboxModule} from '@angular/material';
 
 
 @NgModule({
@@ -53,6 +54,8 @@ import { HighlightDirective } from './highlight.directive';
     FormsModule,
     HttpModule,
     routing,
+    BrowserAnimationsModule,
+    MdCheckboxModule
 
   ],
   providers: [ WeatherService,SharedService],

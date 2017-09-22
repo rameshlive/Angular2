@@ -8,9 +8,11 @@ export class SortingPipe implements PipeTransform {
   transform(value: any, args?: any): any {
     if(value){
 
+        console.log(args);
         let sortField = args[0].toLowerCase();
         let order = args[1].toLowerCase();
         let bedroomtype = args[2].toLowerCase();
+        let rentRange =parseInt(args[3]);
 
        // var result = args.slice(2);
 
@@ -39,9 +41,19 @@ export class SortingPipe implements PipeTransform {
             return 0;
           }
         });
+        
+
+        if(rentRange){
+          return filterValues.filter(person => {
+            return person.price >= 0 && person.price <= +rentRange;
+          });
+        }
 
         return filterValues;
 
+       
+        
+       
     }
   }
 
